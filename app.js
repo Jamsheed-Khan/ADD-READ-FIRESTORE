@@ -95,9 +95,9 @@ readbtn.addEventListener('click', async ()=>{
 
 // }
 // })
-// dltbtn.addEventListener('click',()=>{
-//     getul.innerHTML = ''
-// })
+dltbtn.addEventListener('click',()=>{
+    getul.innerHTML = ''
+})
 
 
 
