@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./favi.png" type="image/x-icon">
+    <title>Website Todo</title>
     <link rel="stylesheet" href="style.css">
-    <title>TODO APP</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="had">
-            <h1>TODO APP</h1>
-        </div>
-        <div class="main">
-            <div class="inp">
-                <input id="inp" type="text" placeholder="Add list">
-                <div class="btn">
-                    <button id="adbtn">ADD</button>
-                    <button id="dltbtn"     >DELETEALL</button>
+            <div class="ul">
+                <div class="had">
+                    <div>
+                        <h3>Website todo</h3>
+                    </div>
+                    <div><button class="delbtn" onclick="openpopap()">+ New task</button></div>
                 </div>
-            </div>
-            <div class="list">
-                <h1>TODO LISTS</h1>
-                <button id="read">ADD</button>
-            </div>
-            <div class="Addedlist">
-                <ul id="ul">
-                    
-                </ul>
-            </div>
+                <div class="listdiv">
+                    <div id="getul" class="li">
+
+
+
+                        
+                    </div> 
+                    </div>
+                <div class="addbtn">
+                <button class="btn"  id="addbtn">DeleteAll</button>
+                </div>
         </div>
     </div>
-    <script type="module" src="app.js"></script>
-    <!-- <script type="module" src="config.js"></script> -->
+    <div class="inp" id="popap">
+        <input type="text" placeholder="Add list" id="getinp"><br>
+        <button id="addtask" class="addtask" onclick="closspopap()">+ Add task</button>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module"  src="app.js"></script>
 </body>
+
 </html>
